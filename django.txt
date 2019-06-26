@@ -1,0 +1,68 @@
+﻿REDES
+REST -  não tem estado; o servidor não precisa saber; são independentes
+(post, put, delete, get)
+
+
+***DJANGO***
+
+https://www.djangoproject.com/
+http://www.djangobrasil.org/
+
+Por quê Django? FACILITA TUA VIDA, NÃO PRECISA CONFIGURAR DO ZERO, VEM PRÉ-CONFIGURADO
+- é um framework de python;
+Django é um framework web de alto nível escrito em Python que estimula o desenvolvimento rápido e limpo
+Desenvolvido e utilizado por mais de dois anods em uma operação ágil de notícias online,
+Django foi projetado para lidar com dois desafios:
+os prazos apertados de uma redação e os requisitos rígidos dos experientes desenvolvedores web que o criaram.
+Ele permite que você construa rapidamente aplicações web de alto desempenho e elegância.
+Django se concentra no máximo de automatização possível e adere ao princípio DRY (um estilo de escrita)
+
+***Arquitetura de projeto - organização logica do funcionamento do sistema***
+
+Arquitetura MVC 
+M odel: regras de negocio
+V iew: interface do usuario
+C ontroller: trata requisicoes do usuario
+
+no Django
+
+M odel
+T emplate
+V iew: (faz função que Controller faz em MVC, que é renderizar as coisas no site)
+
+Arquivos estaticos: sao arquivos que nao sao dinamicos, ou seja, o django nao vai alterar nada, nao e dinamico
+
+*****para abrir/criar um projeto com django
+
+*****criar a pasta  py -m venv env
+
+*****entrar na pasta source env/Scripts/activate
+
+*****comando para criar pasta do projeto dentro da env: django-admin startproject nomedoseuprojeto .
+
+*esse nomedoseuprojeto nessa linha de cima é o nome que tu quer para sua pasta
+*o ponto no final do comando é para que ele não crie uma pasta a mais
+
+.gitignore (vai ignorar os arquivos que estiverem nele para não subir no github, por ex. a env)
+
+rodar o django: python manage.py runserver
+
+verificar se servidor esta rodando =- http://localhost8000
+
+startar o projeto django: python manage.py startapp app
+
+python manage.py startapp landing
+
+cd landing
+mkdir staticfiles
+mkdir templatescd .
+
+cd ..
+
+pip freeze > requeriments.txt (congela o projeto)
+
+para o django saber que tem coisas dele no html, usar tag antes de tudo no html: {% load staticfiles %}
+
+
+
+
